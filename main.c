@@ -4,6 +4,7 @@
 #include "Tree.h"
 
 #define Tree() initTree()
+#define order(a) inOrderTraversal(a);
 
 int main() {
 
@@ -62,7 +63,7 @@ int main() {
 
 
     printf("Students sorted by last name:\n");
-    inOrderTraversal(tree->root);
+    order(tree->root);
 
     return 0;
 }
